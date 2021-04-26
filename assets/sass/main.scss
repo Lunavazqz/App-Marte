@@ -1,0 +1,101 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+
+
+@import 'partials/center_';
+
+@import 'partials/modal';
+
+
+
+
+/* {
+    border: 1px solid tomato;
+}
+*/
+
+html,
+body {
+    font-size: $base * 2;
+    font-family: $font_family_base;
+    background-color: (#BD8069);
+    color: rgb(241, 233, 220);
+    /*color: (#4F3932);*/
+
+
+
+    /*line-height: $base * 3;
+    color: whitesmoke;
+    background-image: url(https://estaticos-cdn.prensaiberica.es/clip/99ab56e2-4256-4df6-9268-3e11d74abfbf_16-9-discover-aspect-ratio_default_0.jpg);
+    background-size: cover;
+    width: 100%;
+   
+    background-repeat: no-repeat;*/
+    
+   
+
+   
+    
+  
+  
+}
+.grid{
+   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.datossaved{
+ 
+       
+        
+        .magnitud{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+           
+            background-color:  rgba(255, 235, 205, 0.287);
+            padding: 2rem;
+            border-radius: 6rem;
+            margin-top: 2rem;
+            
+           
+           
+        
+            div{
+               
+
+           
+                
+                
+            }
+            .borrar{
+                display: flex;
+                
+            }
+        }
+        
+        
+    
+}
+
+
+
+@media screen  and (max-width: 760px){
+    html,
+    body {
+        font-size: 13px;
+       
+    }
+}
+@media screen and (max-width: 414px) {
+
+    
+
+}
+

@@ -1,0 +1,258 @@
+.center{
+  
+    
+    grid-column: 2 / span 2 ;
+   
+    font-family: '1,617';
+
+    .menu{
+
+        .name{
+            
+            padding-top: 1rem;
+            color: (#4F3932);
+
+            display: flex;
+            justify-content: end;
+        }
+
+        .footer{
+            //grid-column: 1 / span  4;
+            grid-column: 1 / span  1;
+        
+            display: flex;
+           //flex-direction: row;
+          //align-items: flex-end;
+          
+          align-items: flex-start;
+           font-size: 25px;
+           color: blanchedalmond;
+           justify-content: space-between;
+           padding-left: 2rem;
+           padding-right: 2rem;
+           padding-bottom: 4rem;
+           
+           .guardados{
+               
+               
+               .fa-save{
+                   color: (#4F3932);
+               }
+            }
+            .home{
+                .fa-home{
+                    color: (#4F3932);
+                    
+                   
+                    }
+        
+            }
+
+            .zodiaco{
+                .fa-sun-o{
+                    color: (#4F3932);
+        
+                }
+        
+            }
+            .now{
+                
+                color: blanchedalmond;
+                background-color: rgba(255, 255, 255, 0.219);
+                padding: 0.5rem;
+                border-radius: 20px;
+
+            }
+         
+        }
+    }
+        .content{
+        
+            padding-top: -2rem;
+
+            .iconos{
+                .marcar-temperatura{
+                    font-size: $base * 10;
+                    font-family: '1,617';
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    margin-bottom: -8rem;
+                    padding-bottom: 5rem;
+                }
+
+                .TituloG{
+                    font-size: $base * 4;
+                    font-family: '1,617';
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    margin-top: -10;
+                    padding-left: -2rem;
+
+                }
+                
+                
+                
+                .fa-sun-o{
+                    font-size: 210px;
+                    display: flex;
+                    align-items: flex-start;
+                
+
+                    color: rgba(255, 235, 205, 0.287);
+                    
+
+                }
+                
+
+            }
+            
+            .marcarfecha{
+                
+                font-size: 16px;
+                padding-right: 0.3rem;
+                padding-bottom: 0.6rem;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-top: 0.9rem;
+                color: (#4F3932)
+
+            }
+            .soles{
+                
+                font-size: 10px;
+                padding-right: 0.3rem;
+                padding-bottom: 0.6rem;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-top: 0.4rem;
+                color: (#4F3932)
+
+            }
+            .datos{
+                background-color: rgba(255, 235, 205, 0.287);
+                border-radius: 14px;
+                padding:1rem;
+
+                .guardar{
+                    display: flex;
+                    justify-content: flex-start;
+                    .fa-plus{
+                        color: (#4F3932)
+                    }
+                    .fa-minus{
+                        color: (#4F3932)
+                    }
+
+                }
+
+                .aire{
+                    font-family: $font_family_base;
+                    font-size:16px;
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-top: 0.2rem;
+                    color: rgb(168, 86, 48);
+                }
+
+
+                    .min-max{
+                        font-size:11px;
+                        display: flex;
+                        flex-direction:row;
+                        justify-content: flex-start;
+                        padding-top: 0.2rem;
+
+                        .minaire{
+                            display: flex;
+                            flex-direction:row;
+                            padding-right: 0.9rem;
+                            list-style: none;
+
+                        }
+                        .maxaire{
+                            display: flex;
+                            flex-direction:row;
+                            list-style: none;
+                            
+
+                        }
+                    }
+                
+                .presion{
+                    font-family: $font_family_base;
+                    display: flex;
+                    justify-content: flex-end;
+                    
+                    
+                    font-size:16px;
+                    
+                    padding-top: 2rem;
+                    color: rgb(168, 86, 48);
+                }
+                    
+
+                    .numpresion{
+            
+                        display: flex;
+                        justify-content: flex-end;
+                        list-style: none;
+
+                    }
+                    
+            
+
+                .suelo{
+                    font-family: $font_family_base;
+                    font-size:16px;
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-top: 2rem;
+                    color: rgb(168, 86, 48);
+                }
+                
+                    .min-max{
+                        font-size:11px;
+                        display: flex;
+                        flex-direction:row;
+                        justify-content: flex-end;
+                        padding-top: 0.2rem;
+                        list-style: none;
+
+                        .minsuelo{
+                            display: flex;
+                            flex-direction:row;
+                            padding-right: 0.9rem;
+                            list-style: none;
+
+                        }
+                        .maxsuelo{
+                            display: flex;
+                            flex-direction:row;
+                            padding-right: 0.5rem;
+                            list-style: none;
+
+                        }
+                    }
+                
+            }
+            
+            
+                
+
+            @media screen  and (max-width: 760px){}
+            @media screen and (max-width: 414px) {
+                html,
+                body{
+                    font-size: 16px;
+                }
+                
+            }
+            
+
+
+        }
+    }

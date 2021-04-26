@@ -1,0 +1,83 @@
+.modal_tweet{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-rows: 2rem auto 1fr;
+    visibility: hidden;
+    
+    .modal_overlay{
+        grid-area: 1 / 1 / -1 / -1;
+        background-color: rgba(91, 112, 131, .4);
+
+
+    }
+    .modal_holder{
+        grid-area: 2 / 2 / span 1 / span 1;
+        background-color: rgb(23, 30, 37);
+        border-radius: 1rem;
+        .modal_header{
+            .close_buttom{
+                padding-top: 0.4rem;
+                padding-left: 1rem;
+                
+            }
+
+        }
+        .modal_body{
+            
+            .new_form{
+                .tweet{
+                    .tweet_user{
+                        display: flex;
+                        flex-direction:row;
+                        padding-left: 1rem;
+                        padding-bottom:0.5rem ;
+                        .Foto_perfil{
+                            @include image
+                        }
+                        
+                    }
+                    .tweet_body{
+                        padding-right: 00.6rem;
+                        padding-left: 0.6rem;
+                       .algo{
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding-left: 0.6rem;
+                        background: transparent;
+                        background-color: transparent;
+                        color: aliceblue;
+                        width: 100%;
+                        text-shadow: none;
+                        
+                       }
+                    
+                    }
+                    .tweet_footer{
+                        padding-left: 0.6rem;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                        .btn{
+                           
+                            @include botom;
+                        }
+                       
+
+                    }
+                }
+            }
+
+        }
+      
+
+    }
+
+    &.opened{
+        visibility: visible;
+    }
+}
